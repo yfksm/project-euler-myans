@@ -9,8 +9,8 @@ using namespace std;
 
 typedef long long LL;
 
-const int N_MAX = 10000;
 const LL SUBJECT = 600851475143LL;
+
 vector<LL> calculate_divisors(LL x) {
     vector<LL> res;
     for(LL n = 1; n * n <= x; n++) {
@@ -38,7 +38,6 @@ bool is_prime_number(LL x) {
 }
 
 int main(void) {
-
     vector<LL> divisors = calculate_divisors(SUBJECT);
     sort(divisors.rbegin(), divisors.rend()); //降順にソート
 
